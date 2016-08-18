@@ -1,0 +1,11 @@
+.sapUiDemoWT .myCustomButton.sapMBtn {
+  margin-right: 0.125rem; }
+
+html[dir="rtl"] .sapUiDemoWT .myCustomButton.sapMBtn {
+  margin-left: 0.125rem;
+  margin-right: 0; }
+
+.sapUiDemoWT .myCustomText {
+  font-weight: bold; }
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSx1QkFDRCxFQUFDOztBQUVGO0VBQ0Usc0JBQXNCO0VBQ3RCLGdCQUNELEVBQUM7O0FBRUY7RUFDRSxrQkFBa0IsRUFDbkIiLCJmaWxlIjoic3R5bGUuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnNhcFVpRGVtb1dUIC5teUN1c3RvbUJ1dHRvbi5zYXBNQnRuIHtcclxuICBtYXJnaW4tcmlnaHQ6IDAuMTI1cmVtXHJcbn1cclxuXHJcbmh0bWxbZGlyPVwicnRsXCJdIC5zYXBVaURlbW9XVCAubXlDdXN0b21CdXR0b24uc2FwTUJ0biB7XHJcbiAgbWFyZ2luLWxlZnQ6IDAuMTI1cmVtO1xyXG4gIG1hcmdpbi1yaWdodDogMFxyXG59XHJcblxyXG4uc2FwVWlEZW1vV1QgLm15Q3VzdG9tVGV4dCB7XHJcbiAgZm9udC13ZWlnaHQ6IGJvbGQ7XHJcbn0iXSwic291cmNlUm9vdCI6Ii9zb3VyY2UvIn0= */

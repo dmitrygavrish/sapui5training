@@ -24,12 +24,8 @@ $.gulp.task('default', $.gulp.series(
     'sass',
     'pug',
     'js.process',
-    'copy.image',
     'copy.view',
-    'copy.controller',
-    'copy.properties',
-    'copy.json',
-    'copy.model',
+    'copy.assets',
     'copy.mock'
   ),
   $.gulp.parallel(
