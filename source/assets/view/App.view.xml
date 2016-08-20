@@ -1,21 +1,19 @@
 <mvc:View
-    controllerName="sap.ui.demo.wt.controller.App"
-    xmlns="sap.m"
-    xmlns:mvc="sap.ui.core.mvc"
-    displayBlock="true">
-    <App class="sapUiDemoWT">
-        <pages>
-            <Page title="{i18n>homePageTitle}">
-                <headerContent>
-                    <Button
-                        icon="sap-icon://hello-world"
-                        press="onOpenDialog"/>
-                </headerContent>
-                <content>
-                    <mvc:XMLView viewName="sap.ui.demo.wt.view.HelloPanel"/>
-                    <mvc:XMLView viewName="sap.ui.demo.wt.view.InvoiceList"/>
-                </content>
-            </Page>
-        </pages>
-    </App>
+        controllerName="sap.ui.demo.wt.controller.App"
+        xmlns="sap.m"
+        xmlns:mvc="sap.ui.core.mvc"
+        displayBlock="true">
+    <App class="nyAppDemoWT" id="app">
+	    <Page title="{i18n>homePageTitle}">
+			<headerContent>
+				<Button
+						icon="sap-icon://hello-world"
+						press="onOpenDialog"/>
+			</headerContent>
+			<content>
+				<mvc:XMLView viewName="sap.ui.demo.wt.view.ColumnTable"/>
+	            <mvc:XMLView viewName="sap.ui.demo.wt.view.InvoiceList"/>
+			</content>
+		</Page>
+	</App>
 </mvc:View>

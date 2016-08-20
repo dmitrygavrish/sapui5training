@@ -1,0 +1,10 @@
+<mvc:View
+    controllerName="sap.ui.demo.wt.controller.IconChoose"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc">
+    <Button
+          icon="sap-icon://world"
+          text="Choose Icon"
+          press="handleSelectDialogPress"
+          class="sapUiResponsiveMargin"/>
+</mvc:View>

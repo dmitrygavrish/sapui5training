@@ -8,6 +8,9 @@
           src="sap-icon://hello-world"
           size="8rem"
           class="sapUiMediumMargin"/>
+      <Text
+        text="Hello {/recipient/name}"
+      />    
     </content>
     <beginButton>
       <Button

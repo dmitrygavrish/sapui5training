@@ -29,5 +29,12 @@ sap.ui.define([
       var oBinding = oList.getBinding("items");
       oBinding.filter(aFilter);
     }
+    // onPress: function (oEvent) {
+    //   var oItem = oEvent.getSource();
+    //   var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+    //   oRouter.navTo("detail", {
+    //     invoicePath: oItem.getBindingContext("invoice").getPath().substr(1)
+    //   });
+    // }
   });
 });

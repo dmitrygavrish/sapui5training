@@ -1,9 +1,11 @@
-sap.ui.define([
+  sap.ui.define([
   "sap/ui/core/UIComponent",
   "sap/ui/model/json/JSONModel",
   "sap/ui/model/resource/ResourceModel",
-  "sap/ui/demo/wt/controller/HelloDialog"
-], function (UIComponent, JSONModel, ResourceModel, HelloDialog) {
+  "sap/ui/demo/wt/controller/HelloDialog",
+  "jquery.sap.global",
+  "sap/ui/core/IconPool"
+], function (UIComponent, JSONModel, ResourceModel, HelloDialog, jQuery, IconPool) {
   "use strict";
   return UIComponent.extend("sap.ui.demo.wt.Component", {
     metadata : {
@@ -29,6 +31,9 @@ sap.ui.define([
 
       // set dialog
       this.helloDialog = new HelloDialog();
+      
+      // create the views based on the url/hash
+      // this.getRouter().initialize();
     }
   });
 });

@@ -13,6 +13,24 @@ sap.ui.define([], function () {
         default:
           return sStatus;
       }
+    },
+
+    statusNumber: function (sStatus) {
+      if (sStatus >= 9) {
+
+        return "Error"
+      } else {
+        
+        return "Success";
+      }
+    },
+
+    statusColor: function(sStatus) {
+      if (sStatus === 'ACME') {
+        return 'blue';
+      } else {
+        return 'magenta';
+      }
     }
   };
 });

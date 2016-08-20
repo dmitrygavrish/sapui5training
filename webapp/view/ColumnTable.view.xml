@@ -1,0 +1,75 @@
+<mvc:View
+	controllerName="sap.ui.demo.wt.controller.ColumnTable"
+	xmlns:l="sap.ui.layout"
+	xmlns:i="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:wt="sap.ui.demo.wt.control">
+	<Table id="idProductsTable"
+		inset="false"
+		items="{
+            path : 'invoice>/Invoices',
+            factory: '.productListFactory'
+        }">
+		<headerToolbar>
+			
+            <Toolbar>
+                <Title text="{i18n>invoiceListTitle}"/>
+                <ToolbarSpacer/>
+                <SearchField width="50%" search="onFilterTable" selectOnFocus="false"/>
+            </Toolbar>
+        	 
+		</headerToolbar>
+		<columns>
+			<Column
+				width="12em">
+				<Text text="Product" />
+			</Column>
+			<Column
+				minScreenWidth="Tablet"
+				demandPopin="true">
+				<Text text="Supplier" />
+			</Column>
+			<Column
+				minScreenWidth="Tablet"
+				hAlign="Center"	>
+				<Text text="Logo" />
+			</Column>
+			<Column
+				hAlign="Right">
+				<Text text="Price" />
+			</Column>
+		</columns>
+		<!-- <items>
+			<ColumnListItem>
+				<cells>
+					<ObjectIdentifier
+						title="{invoice>ProductName}"/>
+					<Text
+						text="{invoice>ShipperName}" />
+					<i:Icon
+						src="sap-icon://{invoice>IconName}"
+						color="{
+							path: 'invoice>ShipperName',
+                    		formatter: '.formatter.statusColor'
+						}" />
+					<ObjectNumber
+						number="{
+				            parts: [{path: 'invoice>ExtendedPrice'}, {path: 'view>/currency'}],
+				            type: 'sap.ui.model.type.Currency',
+				            formatOptions: {
+					            showMeasure: false
+				            }
+		        		}"
+               			unit="{view>/currency}"
+               			state="{
+               				path: 'invoice>ExtendedPrice',
+                    		formatter: '.formatter.statusNumber'
+                    	}"
+                		/>
+				</cells>
+			</ColumnListItem>
+		</items> -->
+	</Table>
+	<wt:ProductRating class="sapUiSmallMarginBeginEnd" change="onRatingChange"/>
+</mvc:View>
