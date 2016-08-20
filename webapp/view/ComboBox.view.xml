@@ -1,0 +1,22 @@
+<mvc:View
+    height="100%"
+    controllerName="sap.ui.demo.wt.controller.ComboBox"
+    xmlns:l="sap.ui.layout"
+    xmlns:core="sap.ui.core"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:wt="sap.ui.demo.wt.control">
+    <ComboBox
+        id="invoiceBox"
+        showSecondaryValues="true"
+        items="{
+            path: 'invoice>/Invoices',
+            sorter: { path: 'ShipperName' }
+        }">
+        <wt:ComboCustom
+            key="{invoice>ShipperName}"
+            text="{invoice>ProductName}"
+            additionalText = "{invoice>ShipperName}"/>
+    </ComboBox>
+    <!--<wt:ComboCustom class="sapUiSmallMarginBeginEnd"/>-->
+</mvc:View>

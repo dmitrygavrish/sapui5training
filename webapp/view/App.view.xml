@@ -5,14 +5,8 @@
         displayBlock="true">
     <App class="nyAppDemoWT" id="app">
 	    <Page title="{i18n>homePageTitle}">
-			<headerContent>
-				<Button
-						icon="sap-icon://hello-world"
-						press="onOpenDialog"/>
-			</headerContent>
 			<content>
-				<mvc:XMLView viewName="sap.ui.demo.wt.view.ColumnTable"/>
-	            <mvc:XMLView viewName="sap.ui.demo.wt.view.InvoiceList"/>
+				<mvc:XMLView viewName="sap.ui.demo.wt.view.ComboBox"/>
 			</content>
 		</Page>
 	</App>
